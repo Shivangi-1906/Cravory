@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    .popup-container {
+        position: fixed;
+        top: 25%;
+        left: 82%;
+        transform: translate(-50%, -50%);
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        display: none;
+        width: 80%;
+        max-width: 600px;
+        height: 380px;
+        /* border-radius: 30%; */
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(103, 8, 8);
+        background-image: linear-gradient(rgba(196, 180, 180, 0.7), rgba(160, 144, 144, 0.7)),url('images/logo/popup3.jpg');
+        background-position: center;
+        opacity: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 33px;
+        font-weight: 350;
+        color: black;
+    }
+
+    .popup-content {
+       display: flex;
+       padding-top:110px ;
+        justify-content: center;
+        text-align: center;
+        color: black;
+        font-weight: bolder;
+        font-size: 35px;
+    }
+
+    .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 40px;
+        color: white;
+    }
+
+    .popup-content h2 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        color: rgb(91, 14, 14);
+    }
+
+    .popup-content p {
+      font-size: 35px;
+        color: rgba(78, 11, 11, 0.633);
+        margin-bottom: 15px;
+        text-align: center;
+        justify-content: center;
+        padding-left: 70px;
+        padding-right: 70px;
+        font-family: "Work Sans";
+    }
+</style>
+  
+<script>
+  // Array containing different popup messages
+  var popupMessages = [
+      { heading: "", message: "Life update - cookie mein choco chip se zyada responsibilities hai, but this is not the case with Cravory" },
+      { heading: "", message: "Your order for a love life is running late by a few years, so meanwhile have a cheesecake" },
+      { heading: "", message: "history banane ki umar mein , order history bana raha hu" },
+      { heading: "", message: "all I need in life is more snacks then snakes" },
+      { heading: "", message: "if you don't like coffee then try again, Cravory will make you fall in love with it" },
+      { heading: "", message: "to all the people who order a cake on 14th Feb but haven't today, sharam nahi aati?" },
+      { heading: "", message: "Monday motivation is out of stock, so have a coffee and bounce back!" },
+      { heading: "", message: "Aaj kiya khane ka maan hai? mithaas mangoge , mithaas denge" },
+      { heading: "", message: "all I need in life is more snacks then snakes" },
+  ];
+
+  // Function to display a random popup
+  function displayRandomPopup() {
+      var randomIndex = Math.floor(Math.random() * popupMessages.length);
+      var popup = popupMessages[randomIndex];
+      document.getElementById('popup-heading').innerText = popup.heading;
+      document.getElementById('popup-message').innerText = popup.message;
+      document.getElementById('popup-container').style.display = 'block';
+  }
+
+  // Function to close the popup
+  function closePopup() {
+      document.getElementById('popup-container').style.display = 'none';
+  }
+
+  // Call the displayRandomPopup function when the page loads
+  window.onload = displayRandomPopup;
+
+</script>
+
+</head>
+
+<body>
+  
+  <div id="popup-container" class="popup-container">
+    <span class="popup-close" onclick="closePopup()">&times;</span>
+    <div class="popup-content">
+        <h2 id="popup-heading">Welcome to our Cravory!</h2>
+        <p id="popup-message" >Taste the Difference, Feel the Warmth.</p>
+        
+    </div>
+</div>
+
+
+  <div class="brand">
+    
+      <div class="navbar">
+  
+        <nav>
+          <ul>
+            
+            <li><a href="about.html">About</a></li>
+            <li><a href="SignUp.html">Sign Up / Sign In</a></li>
+            <li> <a href="cart.html" style="font-size: 30px;">🛒</a></li>
+            
+            <li><div class="dropdown">
+              <button class="dropbtn" style="height:10px; font-size: 23px;align-items: center;align-content: center; text-align: center;padding-bottom: 10px;">Categories 
+                <div class="fa fa-caret-down"></div>
+              </button>
+              <div class="dropdown-content">
+                <a onclick="window.location.href='store.html#chocolatepage'">Chocolates</a>
+                <a onclick="window.location.href='store.html#browniepage'">Brownies</a>
+                <a onclick="window.location.href='store.html#cheesecakepage'">Cheesecakes</a>
+                <a onclick="window.location.href='store.html#coffeepage'">Coffee</a>
+                <a onclick="window.location.href='store.html#cupcakepage'">Cupcakes</a>
+                <a onclick="window.location.href='store.html#shakepage'">Shakes</a>
+                <a onclick="window.location.href='store.html#pastrypage'">Pastry</a>
+                <a onclick="window.location.href='store.html#icecreampage'">Icecream</a>
+                <a onclick="window.location.href='store.html#cookiepage'">Cookies</a>
+                
+              </div>
+            </div></li> 
+           
+           
+
+          </ul>
+        </nav>
+
+      </div>
+      
+    
+
+    
+    <img class="logos" src="images/logo/logo3.png" alt=""></div>
+
+
+  <div class="storyback">
+    <div class="story">
+      
+      <img src="images/storyback/pic3.jpg" alt="">
+    </div>
+  </div>
+<br><br>
+<br>
+  <div class="shop" style="font-family:'Protest Riot'">EXPLORE  OUR  MENU</div>
+
+  <main>
+    <div class="category-grid">
+      <div class="category">
+        <img src="images/chocolate/chocolate.png" alt="Chocolates">
+        <div class="middle" onclick="window.location.href='store.html#chocolatepage'"><div class="hovertext" style="font-family: Protest Strike;">Chocolates</div></div>
+        <p>Indulge in our delicious range of chocolates.</p>
+      </div>
+      <div class="category">
+        <img src="images/shakes/shake.png" alt="Shakes">
+        <div class="middle" onclick="window.location.href='store.html#shakepage'"><div class="hovertext" style="font-family: Protest Strike;">Shakes</div></div>
+        <p>Refreshing shakes to quench your thirst.</p>
+      </div>
+      <div class="category">
+        <img src="images/cheesecake/cheesecake.png" alt="Cheesecakes">
+        <div class="middle" onclick="window.location.href='store.html#cheesecakepage'"><div class="hovertext" style="font-family: Protest Strike;">Cheesecakes</div></div>
+        <p>Rich and creamy cheesecakes for every occasion.</p>
+      </div>
+      <div class="category">
+        <img src="images/brownie/brownie.png" alt="brownie">
+        <div class="middle" onclick="window.location.href='store.html#browniepage'"><div class="hovertext" style="font-family: Protest Strike;">Brownie</div></div>
+        <p>A small bite to fulfill your sweet tooth</p>
+      </div>
+     
+      <div class="category">
+        <img src="images/coffee/coffee.png" alt="Coffee">
+        <div class="middle" onclick="window.location.href='store.html#coffeepage'"><div class="hovertext" style="font-family: Protest Strike;">Coffee</div></div>
+        <p>Start your day with our freshly brewed coffee.</p>
+      </div>
+      <div class="category">
+        <img src="images/pastry/pastry.png" alt="Pastry">
+        <div class="middle" onclick="window.location.href='store.html#pastrypage'"><div class="hovertext" style="font-family: Protest Strike;">Patisserie</div></div>
+        <p>Delectable pastries to satisfy your sweet cravings.</p>
+      </div>
+      <div class="category">
+        <img src="images/cupcake/cupcake.png" alt="Cupcakes">
+        <div class="middle" onclick="window.location.href='store.html#cupcakepage'"><div class="hovertext" style="font-family: Protest Strike;">Cupcakes</div></div>
+        <p>Delightful cupcakes in a variety of flavors.</p>
+      </div>
+      <div class="category">
+        <img src="images/cookie/cookie.png" alt="Cookies">
+        <div class="middle" onclick="window.location.href='store.html#cookiepage'"><div class="hovertext" style="font-family: Protest Strike;">Cookies</div></div>
+        <p>Experience a crisp and crunch.</p>
+      </div>
+      <div class="category">
+        <img src="images/icecream/icecream.png" alt="icecream">
+        <div class="middle" onclick="window.location.href='store.html#icecreampage'"><div class="hovertext" style="font-family: Protest Strike;">Icecreams</div></div>
+        <p>Creamy Icy Thunder Wonder </p>
+      </div>
+      
+    </div>
+  </main>
+
+ 
+
+
+<section class="footer">
+  <div class="detail">
+
+    <div>
+      <div class="t-head"><img src="images/logo/logo3.png" style="height: 230px; width: 230px;"></div>
+    </div>
+
+      <div>
+        <div class="t-head">Get to know us</div>
+        <ul>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>About Cravory</li>
+          <li>Investors Relations</li>
+          <li>Cravory Advices</li>
+          <li>Cravory Science</li>
+        </ul>
+      </div>
+      
+      <div>
+        <div class="t-head">Get to know us</div>
+        <ul>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>About Cravory</li>
+          <li>Investors Relations</li>
+          <li>Cravory Advices</li>
+          <li>Cravory Science</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="t-head">Get to know us</div>
+        <ul>
+          <li style="font-size: 20px;">📞:9878956232</li>
+          <li style="font-size: 19px;">📧:Crave@gmail.com</li>
+          <li>
+          <img src="images/logo/instagram.png" style="height: 23px; width: 23px;">
+          &nbsp;&nbsp;&nbsp;
+          <img src="images/logo/youtube.png" style="height: 23px; width: 23px;">
+          &nbsp;&nbsp;&nbsp;
+          <img src="images/logo/meta.png" style="height: 23px; width: 23px;">
+          </li>
+        </ul>
+      </div>
+   
+    </div>
+    <div class="line"></div>
+    <div class="copy">
+      <span>&copy; 2024 Cravory. All rights reseved</span>
+    </div>
+</section>
+
+  
+  
+</body>
+
+</html>

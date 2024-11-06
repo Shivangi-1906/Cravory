@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cravory - Order Confirmed</title>
+    <style>
+        body {
+            /* background-color: rgb(2, 2, 28); */
+            
+            background-image: url('images/back/back5.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: 10; */
+            padding: 0;
+            color: white;
+        }
+
+        .navbar {
+            background-color: #593d35;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 23px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .confirmation {
+            background-color: #fff; /* White background */
+            border: 3px solid #af4c4cef; /* Green border */
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            opacity: 0;
+            font-size: 33px;
+            animation: fade-in 2s ease-in-out forwards;
+        }
+
+        .confirmation h1 {
+            color: #794b2fbe; /* Green text */
+        }
+
+        .confirmation p {
+            color: #a02b2bc4; /* Dark text color */
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="signup.html">Sign In / Sign Up</a>
+        <a href="about.html">About</a>
+       <a onclick="window.location.href='Signup.html'">Signup</a>
+        
+    </div>
+    <br><br><br><br><br>
+    <div class="confirmation">
+        <h1>Happiness confirmed!</h1>
+        <p style="color: #680d0dc5;">Thank you for trusting us.</p>
+    </div>
+</body>
+</html>

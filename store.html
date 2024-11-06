@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store page</title>
+  
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="navbar">
+    
+        <nav>
+          <ul type="none">
+  
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            
+            
+             <a id="cart" href="BuyNow.html" style="font-size: 28px;">🛒</a>          
+             
+             <li>
+              <input type="text" id="searchInput" placeholder="Search here">
+              <button onclick="searchItems()">Search</button>
+          </li>
+          </ul>
+         
+        </nav>
+        
+      </div>
+    
+<h1 id="browniepage" style="font-family: Dancing Script;font-size: 250px;"><img src="images\brownie\brownieback.png" alt=""></h1>
+<div class="divi"> <div class="division subdiv1">
+  <div class="center-container">
+  <div class="brownie-container">
+    <div class="brownie-item">
+      <img src="images/brownie/brownie1.png" alt="brownie 1">
+      <div class="item-details">
+        <h2>White Chocolate and Cranberry Brownie</h2>
+        <p>Description of brownie 1.</p>
+        <p>Rs. 425.00</p>
+        <input type="number" id="b1" value="0" min="0">
+        <button onclick="addToCart('White Chocolate and Cranberry Brownie', 425.00, parseInt(document.getElementById('b1').value),'b1')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="brownie-item">
+      <img src="images/brownie/brownie2.png" alt="brownie 2">
+      <div class="item-details">
+        <h2>Eggless Brownie</h2>
+        <p>Description of brownie 2.</p>
+        <p>Rs. 279.00</p>
+        <input type="number" id="b2" value="0" min="0">
+        <button onclick="addToCart('Eggless Brownie', 279.00, parseInt(document.getElementById('b2').value),'b2')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="brownie-item">
+      <img src="images/brownie/brownie3.png" alt="brownie 2">
+      <div class="item-details">
+        <h2>Double Chocolate Brownie</h2>
+        <p>Description of brownie 2.</p>
+        <p>Rs. 299.00</p>
+        <input type="number" id="b3" value="0" min="0">
+        <button onclick="addToCart('Double Chocolate Brownie', 299.00, parseInt(document.getElementById('b3').value),'b3')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="division subdiv2">
+    <div class="brownie-item">
+      <img src="images/brownie/brownie4.png" alt="brownie 2">
+      <div class="item-details">
+        <h2>Chocolate Dense Brownie</h2>
+        <p>Description of brownie 2.</p>
+        <p>Rs. 345.00</p>
+        <input type="number" id="b4" value="0" min="0">
+        <button onclick="addToCart('Chocolate Dense Brownie', 345.00, parseInt(document.getElementById('b4').value),'b4')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="brownie-item">
+      <img src="images/brownie/brownie5.png" alt="brownie 2">
+      <div class="item-details">
+        <h2>Chocolate Ganache Brownie</h2>
+        <p>Description of brownie 2.</p>
+        <p>Rs. 259.00</p>
+        <input type="number" id="b5" value="0" min="0">
+        <button onclick="addToCart('Chocolate Ganache Brownie', 259.00, parseInt(document.getElementById('b5').value),'b5')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="brownie-item">
+      <img src="images/brownie/brownie6.png" alt="brownie 2">
+      <div class="item-details">
+        <h2>Walnut Brownie</h2>
+        <p>Description of brownie 2.</p>
+        <p>Rs. 155.00</p>
+        <input type="number" id="b6" value="0" min="">
+        <button onclick="addToCart('Walnut Brownie', 155.00, parseInt(document.getElementById('b6').value),'b6')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Add more brownie items as needed -->
+  </div>
+</div>
+
+<h1 id="cheesecakepage" style="font-family: Dancing Script;font-size: 250px;"><img src="images\cheesecake\Cheesecakeback.png" alt=""></h1>
+ <div class="divi"> <div class="division subdiv1">
+    <div class="center-container">
+    <div class="cheesecake-container">
+      <div class="cheesecake-item">
+        <img src="images/cheesecake/cheesecake1.png" alt="cheesecake 1">
+        <div class="item-details">
+          <h2>Blueberry Baked Cheesecake</h2>
+          <p>Description of cheesecake 1.</p>
+          <p>Rs. 425.00</p>
+          <input type="number" id="c1" value="0" min="0">
+          <button onclick="addToCart('Blueberry Baked Cheesecake', 425.00, parseInt(document.getElementById('c1').value),'c1')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cheesecake-item">
+        <img src="images/cheesecake/cheesecake2.png" alt="cheesecake 2">
+        <div class="item-details">
+          <h2>Newyork Baked Cheesecake</h2>
+          <p>Description of cheesecake 2.</p>
+          <p>Rs. 379.00</p>
+          <input type="number" id="c2" value="0" min="0">
+          <button onclick="addToCart('Newyork Baked Cheesecake', 8.99, parseInt(document.getElementById('c2').value),'c2')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cheesecake-item">
+        <img src="images/cheesecake/cheesecake3.png" alt="cheesecake 2">
+        <div class="item-details">
+          <h2>Pineapple Baked Cheesecake</h2>
+          <p>Description of cheesecake 2.</p>
+          <p>Rs. 399.00</p>
+          <input type="number" id="c3" value="0" min="0">
+          <button onclick="addToCart('Pineapple Baked Cheesecake', 9.99, parseInt(document.getElementById('c3').value),'c3')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="division subdiv2">
+      <div class="cheesecake-item">
+        <img src="images/cheesecake/cheesecake4.png" alt="cheesecake 2">
+        <div class="item-details">
+          <h2>Strawberry Baked Cheesecake</h2>
+          <p>Description of cheesecake 2.</p>
+          <p>Rs. 399.00</p>
+          <input type="number" id="c4" value="0" min="0">
+          <button onclick="addToCart('Strawberry Baked Cheesecake', 2.99, parseInt(document.getElementById('c4').value),'c4')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cheesecake-item">
+        <img src="images/cheesecake/cheesecake5.png" alt="cheesecake 2">
+        <div class="item-details">
+          <h2>Belgian Chocolate Mousse</h2>
+          <p>Description of cheesecake 2.</p>
+          <p>Rs. 399.00</p>
+          <input type="number" id="c5" value="0" min="0">
+          <button onclick="addToCart('Belgian Chocolate Mousse', 4.99, parseInt(document.getElementById('c5').value),'c5')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cheesecake-item">
+        <img src="images/cheesecake/cheesecake6.png" alt="cheesecake 2">
+        <div class="item-details">
+          <h2>Lotus Biscoff Cheesecake</h2>
+          <p>Description of cheesecake 2.</p>
+          <p>Rs. 255.00</p>
+          <input type="number" id="c6" value="0" min="0">
+          <button onclick="addToCart('Lotus Biscoff Cheesecake', 8.99, parseInt(document.getElementById('c6').value),'c6')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Add more cheesecake items as needed -->
+    </div>
+  </div>
+
+  <h1 id="chocolatepage" style="font-family: Dancing Script;font-size: 250px;"><img src="images\chocolate\chocolateback.png" alt=""></h1>
+ <div class="divi"> <div class="division subdiv1">
+    <div class="center-container">
+    <div class="chocolate-container">
+      <div class="chocolate-item">
+        <img src="images/chocolate/chocolate1.png" alt="Chocolate 1">
+        <div class="item-details">
+          <h2>Edible Chocolate Cigars</h2>
+          <p>Description of Chocolate 1.</p>
+          <p>Rs. 1025.00</p>
+          <input type="number" id="ch1" value="0" min="0">
+          <button onclick="addToCart('Edible Chocolate Cigars', 10.99, parseInt(document.getElementById('ch1').value),'ch1')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="chocolate-item">
+        <img src="images/chocolate/chocolate2.png" alt="Chocolate 2">
+        <div class="item-details">
+          <h2>Salted caramel Truffle</h2>
+          <p>Description of Chocolate 2.</p>
+          <p>Rs. 979.00</p>
+          <input type="number" id="ch2" value="0" min="0">
+          <button onclick="addToCart('Salted caramel Truffle', 8.99, parseInt(document.getElementById('ch2').value),'ch2')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="chocolate-item">
+        <img src="images/chocolate/chocolate3.png" alt="Chocolate 2">
+        <div class="item-details">
+          <h2>Cashew Roka</h2>
+          <p>Description of Chocolate 2.</p>
+          <p>Rs. 1099.00</p>
+          <input type="number" id="ch3" value="0" min="0">
+          <button onclick="addToCart('Cashew Roka', 9.99, parseInt(document.getElementById('ch3').value),'ch3')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="division subdiv2">
+      <div class="chocolate-item">
+        <img src="images/chocolate/chocolate4.png" alt="Chocolate 2">
+        <div class="item-details">
+          <h2>Hazelnut Truffle</h2>
+          <p>Description of Chocolate 2.</p>
+          <p>Rs. 899.00</p>
+          <input type="number" id="ch4" value="0" min="0">
+          <button onclick="addToCart('Hazelnut Truffle', 2.99, parseInt(document.getElementById('ch4').value),'ch4')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="chocolate-item">
+        <img src="images/chocolate/chocolate5.png" alt="Chocolate 2">
+        <div class="item-details">
+          <h2>Almond Roka</h2>
+          <p>Description of Chocolate 2.</p>
+          <p>Rs. 999.00</p>
+          <input type="number" id="ch5" value="0" min="0">
+          <button onclick="addToCart('Almond Roka', 4.99,parseInt(document.getElementById('ch5').value),'ch5')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="chocolate-item">
+        <img src="images/chocolate/chocolate6.png" alt="Chocolate 2">
+        <div class="item-details">
+          <h2>Single Origin Truffle</h2>
+          <p>Description of Chocolate 2.</p>
+          <p>Rs. 1055.00</p>
+          <input type="number" id="ch6" value="0" min="">
+          <button onclick="addToCart('Single Origin Truffle', 8.99, parseInt(document.getElementById('ch6').value),'ch6')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Add more chocolate items as needed -->
+    </div>
+  </div>
+
+  <h1 id="coffeepage" style="font-family: Dancing Script;font-size: 250px;color:white;height:900px;width:100vw;"><img src="images/coffee/coffeback.png" alt=""></h1>
+ <div class="divi"> <div class="division subdiv1">
+    <div class="center-container">
+    <div class="coffee-container">
+      <div class="coffee-item">
+        <img src="images/coffee/latte.jpg" alt="coffee 1">
+        <div class="item-details">
+          <h2>Latte</h2>
+          <p>Description of coffee 1.</p>
+          <p>Rs. 325.00</p>
+          <input type="number" id="cf1" value="0" min="0">
+          <button onclick="addToCart('Latte', 10.99,parseInt(document.getElementById('cf1').value),'cf1')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="coffee-item">
+        <img src="images/coffee/coffee2.png" alt="coffee 2">
+        <div class="item-details">
+          <h2>Cappucino</h2>
+          <p>Description of coffee 2.</p>
+          <p>Rs. 379.00</p>
+          <input type="number" id="cf2" value="0" min="0">
+          <button onclick="addToCart('Cappucino', 8.99,parseInt(document.getElementById('cf2').value),'cf2')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="coffee-item">
+        <img src="images/coffee/coffee3.png" alt="coffee 2">
+        <div class="item-details">
+          <h2>Espresso</h2>
+          <p>Description of coffee 2.</p>
+          <p>Rs. 399.00</p>
+          <input type="number" id="cf3" value="0" min="0">
+          <button onclick="addToCart('Espresso', 9.99,parseInt(document.getElementById('cf3').value),'cf3')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="division subdiv2">
+      <div class="coffee-item">
+        <img src="images/coffee/mocha.jpg" alt="coffee 2">
+        <div class="item-details">
+          <h2>Mocha</h2>
+          <p>Description of coffee 2.</p>
+          <p>Rs. 499.00</p>
+          <input type="number" id="cf4" value="0" min="0">
+          <button onclick="addToCart('Mocha', 2.99,parseInt(document.getElementById('cf4').value),'cf4')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="coffee-item">
+        <img src="images/coffee/americano.jpg" alt="coffee 2">
+        <div class="item-details">
+          <h2>Americano Coffee</h2>
+          <p>Description of coffee 2.</p>
+          <p>Rs. 299.00</p>
+          <input type="number" id="cf5" value="0" min="0">
+          <button onclick="addToCart('Americano Coffee', 4.99,parseInt(document.getElementById('cf5').value),'cf5')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="coffee-item">
+        <img src="images/coffee/irish.jpg" alt="coffee 2">
+        <div class="item-details">
+          <h2>Irish Coffee</h2>
+          <p>Description of coffee 2.</p>
+          <p>Rs. 355.00</p>
+          <input type="number" id="cf6" value="0" min="">
+          <button onclick="addToCart('Irish Coffee', 8.99,parseInt(document.getElementById('cf6').value),'cf6')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Add more coffee items as needed -->
+    </div>
+  </div>
+
+  <h1 id="cookiepage" style="font-family: Dancing Script;font-size: 250px;"><img src="images/cookie/cookieback.png" alt=""></h1>
+ <div class="divi"> <div class="division subdiv1">
+    <div class="center-container">
+    <div class="cookie-container">
+      <div class="cookie-item">
+        <img src="images/cookie/cookie1.png" alt="cookie 1">
+        <div class="item-details">
+          <h2>Vegan Almond Cookies</h2>
+          <p>Description of cookie 1.</p>
+          <p>Rs. 325.00</p>
+          <input type="number" id="ck1" value="0" min="0">
+          <button onclick="addToCart('Vegan Almond Cookies', 10.99,parseInt(document.getElementById('ck1').value),'ck1')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cookie-item">
+        <img src="images/cookie/cookie2.png" alt="cookie 2">
+        <div class="item-details">
+          <h2>Red Velvet Sugar cookies</h2>
+          <p>Description of cookie 2.</p>
+          <p>Rs. 279.00</p>
+          <input type="number" id="ck2" value="0" min="0">
+          <button onclick="addToCart('Red Velvet Sugar cookies', 8.99,parseInt(document.getElementById('ck2').value),'ck2')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cookie-item">
+        <img src="images/cookie/cookie3.png" alt="cookie 2">
+        <div class="item-details">
+          <h2>Coconut Flour cookies</h2>
+          <p>Description of cookie 2.</p>
+          <p>Rs. 399.00</p>
+          <input type="number" id="ck3" value="0" min="0">
+          <button onclick="addToCart('Coconut Flour cookies', 9.99,parseInt(document.getElementById('ck3').value),'ck3')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="division subdiv2">
+      <div class="cookie-item">
+        <img src="images/cookie/cookie4.png" alt="cookie 2">
+        <div class="item-details">
+          <h2>White Chocolate Macademia</h2>
+          <p>Description of cookie 2.</p>
+          <p>Rs. 399.00</p>
+          <input type="number" id="ck4" value="0" min="0">
+          <button onclick="addToCart('White Chocolate Macademia', 2.99,parseInt(document.getElementById('ck4').value),'ck4')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cookie-item">
+        <img src="images/cookie/cookie5.png" alt="cookie 2">
+        <div class="item-details">
+          <h2>Cinnamon-Raisin Oatmeal cookies</h2>
+          <p>Description of cookie 2.</p>
+          <p>Rs. 299.00</p>
+          <input type="number" id="ck5" value="0" min="0">
+          <button onclick="addToCart('Cinnamon-Raisin Oatmeal cookies', 4.99,parseInt(document.getElementById('ck5').value),'ck5')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cookie-item">
+        <img src="images/cookie/cookie6.png" alt="cookie 2">
+        <div class="item-details">
+          <h2>Chocolate Meringue Cookies</h2>
+          <p>Description of cookie 2.</p>
+          <p>Rs. 355.00</p>
+          <input type="number" id="ck6" value="0" min="">
+          <button onclick="addToCart('Chocolate Meringue Cookies', 8.99,parseInt(document.getElementById('ck6').value),'ck6')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Add more cookie items as needed -->
+    </div>
+  </div>
+
+  <h1 id="cupcakepage" style="font-family: Dancing Script;font-size: 250px;"><img src="images/cupcake/cupcakeback.png" alt=""></h1>
+ <div class="divi"> <div class="division subdiv1">
+    <div class="center-container">
+    <div class="cupcake-container">
+      <div class="cupcake-item">
+        <img src="images/cupcake/cupcake1.png" alt="cupcake 1">
+        <div class="item-details">
+          <h2>Funfetti Vanilla</h2>
+          <p>Description of cupcake 1.</p>
+          <p>Rs. 225.00</p>
+          <input type="number" id="cc1" value="0" min="0">
+          <button onclick="addToCart('Funfetti Vanilla', 10.99,parseInt(document.getElementById('cc1').value),'cc1')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cupcake-item">
+        <img src="images/cupcake/cupcake2.png" alt="cupcake 2">
+        <div class="item-details">
+          <h2>Brown Butter Sweet cherry cupcake</h2>
+          <p>Description of cupcake 2.</p>
+          <p>Rs. 379.00</p>
+          <input type="number" id="cc2" value="0" min="0">
+          <button onclick="addToCart('Brown Butter Sweet cherry cupcake', 8.99,parseInt(document.getElementById('cc2').value),'cc2')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cupcake-item">
+        <img src="images/cupcake/cupcake3.png" alt="cupcake 2">
+        <div class="item-details">
+          <h2>Blueberry Cupcake</h2>
+          <p>Description of cupcake 2.</p>
+          <p>Rs. 299.00</p>
+          <input type="number" id="cc3" value="0" min="0">
+          <button onclick="addToCart('Blueberry Cupcake', 9.99,parseInt(document.getElementById('cc3').value),'cc3')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="division subdiv2">
+      <div class="cupcake-item">
+        <img src="images/cupcake/cupcake4.png" alt="cupcake 2">
+        <div class="item-details">
+          <h2>Pumpkin cupcake with marshmallow</h2>
+          <p>Description of cupcake 2.</p>
+          <p>Rs. 299.00</p>
+          <input type="number" id="cc4" value="0" min="0">
+          <button onclick="addToCart('Pumpkin cupcake with marshmallow', 2.99,parseInt(document.getElementById('cc4').value),'cc4')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cupcake-item">
+        <img src="images/cupcake/cupcake5.png" alt="cupcake 2">
+        <div class="item-details">
+          <h2>Paleo Double chocolate cupcake</h2>
+          <p>Description of cupcake 2.</p>
+          <p>Rs. 399.00</p>
+          <input type="number" id="cc5" value="0" min="0">
+          <button onclick="addToCart('Paleo Double chocolate cupcake', 4.99,parseInt(document.getElementById('cc5').value),'cc5')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cupcake-item">
+        <img src="images/cupcake/cupcake6.png" alt="cupcake 2">
+        <div class="item-details">
+          <h2>Red Velvet cupcake</h2>
+          <p>Description of cupcake 2.</p>
+          <p>Rs. 255.00</p>
+          <input type="number" id="cc6" value="0" min="">
+          <button onclick="addToCart('Red Velvet cupcake', 8.99,parseInt(document.getElementById('cc6').value),'cc6')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Add more cupcake items as needed -->
+    </div>
+  </div>
+
+  <h1 id="icecreampage" style="font-family: Dancing Script;font-size: 250px;"><img src="images/icecream/icecreamback.png" alt=""></h1>
+ <div class="divi"> <div class="division subdiv1">
+    <div class="center-container">
+    <div class="icecream-container">
+      <div class="icecream-item">
+        <img src="images/icecream/icecream1.png" alt="icecream 1">
+        <div class="item-details">
+          <h2>Strawberry Icecream</h2>
+          <p>Description of icecream 1.</p>
+          <p>Rs. 225.00</p>
+          <input type="number" id="ic1" value="0" min="0">
+          <button onclick="addToCart('Strawberry Icecream', 10.99,parseInt(document.getElementById('ic1').value),'ic1')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="icecream-item">
+        <img src="images/icecream/icecream2.png" alt="icecream 2">
+        <div class="item-details">
+          <h2>Butterscotch Swirl</h2>
+          <p>Description of icecream 2.</p>
+          <p>Rs. 279.00</p>
+          <input type="number" id="ic2" value="0" min="0">
+          <button onclick="addToCart('Butterscotch Swirl', 8.99,parseInt(document.getElementById('ic2').value),'ic2')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="icecream-item">
+        <img src="images/icecream/icecream3.png" alt="icecream 2">
+        <div class="item-details">
+          <h2>Vietnamese Coffee Icecream</h2>
+          <p>Description of icecream 2.</p>
+          <p>Rs. 299.00</p>
+          <input type="number" id="ic3" value="0" min="0">
+          <button onclick="addToCart('Vietnamese Coffee Icecream', 9.99,parseInt(document.getElementById('ic3').value),'ic3')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="division subdiv2">
+      <div class="icecream-item">
+        <img src="images/icecream/icecream4.png" alt="icecream 2">
+        <div class="item-details">
+          <h2>Mint Chocolate Chip</h2>
+          <p>Description of icecream 2.</p>
+          <p>Rs. 199.00</p>
+          <input type="number" id="ic4" value="0" min="0">
+          <button onclick="addToCart('Mint Chocolate Chip', 2.99,parseInt(document.getElementById('ic4').value),'ic4')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="icecream-item">
+        <img src="images/icecream/icecream5.png" alt="icecream 2">
+        <div class="item-details">
+          <h2>Lavender Honey Icecream</h2>
+          <p>Description of icecream 2.</p>
+          <p>Rs. 249.00</p>
+          <input type="number" id="ic5" value="0" min="0">
+          <button onclick="addToCart('Lavender Honey Icecream', 4.99,parseInt(document.getElementById('ic5').value),'ic5')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="icecream-item">
+        <img src="images/icecream/icecream6.png" alt="icecream 2">
+        <div class="item-details">
+          <h2>Chocolate Peanut Butter icecream</h2>
+          <p>Description of icecream 2.</p>
+          <p>Rs. 255.00</p>
+          <input type="number" id="ic6" value="0" min="">
+          <button onclick="addToCart('Chocolate Peanut Butter icecream', 8.99,parseInt(document.getElementById('ic6').value),'ic6')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Add more icecream items as needed -->
+    </div>
+  </div>
+
+  <h1 id="pastrypage" style="font-family: Dancing Script;font-size: 250px;"><img src="images/pastry/pastryback.png" alt=""></h1>
+ <div class="divi"> <div class="division subdiv1">
+    <div class="center-container">
+    <div class="pastry-container">
+        <div class="pastry-item">
+            <img src="images/pastry/pastry6.png" alt="pastry 2">
+            <div class="item-details">
+              <h2>Pistachio Vanilla </h2>
+              <p>Description of pastry 2.</p>
+              <p>Rs. 255.00</p>
+              <input type="number" id="p6" value="0" min="">
+              <button onclick="addToCart('Pistachio Vanilla', 8.99,parseInt(document.getElementById('p6').value),'p6')">Add to Cart</button>
+            </div>
+          </div>
+      
+        <div class="pastry-item">
+        <img src="images/pastry/pastry1.png" alt="pastry 1">
+        <div class="item-details">
+          <h2>Blackberry Eclair</h2>
+          <p>Description of pastry 1.</p>
+          <p>Rs. 225.00</p>
+          <input type="number" id="p1" value="0" min="0">
+          <button onclick="addToCart('Blackberry Eclair', 10.99,parseInt(document.getElementById('p1').value),'p1')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="pastry-item">
+        <img src="images/pastry/pastry2.png" alt="pastry 2">
+        <div class="item-details">
+          <h2>Beyond our sky</h2>
+          <p>Description of pastry 2.</p>
+          <p>Rs. 179.00</p>
+          <input type="number" id="p2" value="0" min="0">
+          <button onclick="addToCart('Beyond our sky', 8.99,parseInt(document.getElementById('p2').value),'p2')">Add to Cart</button>
+        </div>
+      </div>
+    
+    </div>
+    <div class="division subdiv2">
+      <div class="pastry-item">
+        <img src="images/pastry/pastry4.png" alt="pastry 2">
+        <div class="item-details">
+          <h2>Caramel chocolate cream puffs</h2>
+          <p>Description of pastry 2.</p>
+          <p>Rs. 199.00</p>
+          <input type="number" id="p4" value="0" min="0">
+          <button onclick="addToCart('Caramel chocolate cream puffs', 2.99,parseInt(document.getElementById('p4').value),'p4')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="pastry-item">
+
+        <img src="images/pastry/pastry5.png" alt="pastry 2">
+        <div class="item-details">
+          <h2>Tiramisu Eclair</h2>
+          <p>Description of pastry 2.</p>
+          <p>Rs. 299.00</p>
+          <input type="number" id="p5" value="0" min="0">
+          <button onclick="addToCart('Tiramisu Eclair', 4.99,parseInt(document.getElementById('p5').value),'p5')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="pastry-item">
+        <img src="images/pastry/pastry3.png" alt="pastry 2">
+        <div class="item-details">
+          <h2>Tangerine Eclair</h2>
+          <p>Description of pastry 2.</p>
+          <p>Rs. 299.00</p>
+          <input type="number" id="p3" value="0" min="0">
+          <button onclick="addToCart('Tangerine Eclair', 9.99,parseInt(document.getElementById('p3').value),'p3')">Add to Cart</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+      <!-- Add more pastry items as needed -->
+    </div>
+  </div>
+
+  <h1 id="shakepage" style="font-family: Dancing Script;font-size: 250px;"><img src="images/shakes/shakeback.png" alt=""></h1>
+ <div class="divi"> <div class="division subdiv1">
+    <div class="center-container">
+    <div class="shake-container">
+      <div class="shake-item">
+        <img src="images/shakes/shake1.png" alt="shake 1">
+        <div class="item-details">
+          <h2>Strawberry milkshake</h2>
+          <p>Description of shake 1.</p>
+          <p>Rs. 325.00</p>
+          <input type="number" id="s1" value="0" min="0">
+          <button onclick="addToCart('Strawberry milkshake', 10.99,parseInt(document.getElementById('s1').value),'s1')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shake-item">
+        <img src="images/shakes/shake2.png" alt="shake 2">
+        <div class="item-details">
+          <h2>Blueberry milkshake</h2>
+          <p>Description of shake 2.</p>
+          <p>Rs. 379.00</p>
+          <input type="number" id="s2" value="0" min="0">
+          <button onclick="addToCart('Blueberry milkshake', 8.99,parseInt(document.getElementById('s2').value),'s2')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shake-item">
+        <img src="images/shakes/shake3.png" alt="shake 2">
+        <div class="item-details">
+          <h2>Emerald Mint milkshake</h2>
+          <p>Description of shake 2.</p>
+          <p>Rs. 399.00</p>
+          <input type="number" id="s3" value="0" min="0">
+          <button onclick="addToCart('Emerald Mint milkshake', 9.99,parseInt(document.getElementById('s3').value),'s3')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="division subdiv2">
+      <div class="shake-item">
+        <img src="images/shakes/shake4.png" alt="shake 2">
+        <div class="item-details">
+          <h2>BlueMoon milkshake</h2>
+          <p>Description of shake 2.</p>
+          <p>Rs. 399.00</p>
+          <input type="number" id="s4" value="0" min="0">
+          <button onclick="addToCart('BlueMoon milkshake', 2.99,parseInt(document.getElementById('s4').value),'s4')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shake-item">
+        <img src="images/shakes/shake5.png" alt="shake 2">
+        <div class="item-details">
+          <h2>Caramel milkshake</h2>
+          <p>Description of shake 2.</p>
+          <p>Rs. 299.00</p>
+          <input type="number" id="s5" value="0" min="0">
+          <button onclick="addToCart('Caramel milkshake', 4.99,parseInt(document.getElementById('s5').value),'s5')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shake-item">
+        <img src="images/shakes/shake6.png" alt="shake 2">
+        <div class="item-details">
+          <h2>Frozen Hot Chocolate</h2>
+          <p>Description of shake 2.</p>
+          <p>Rs. 355.00</p>
+          <input type="number" id="s6" value="0" min="">
+          <button onclick="addToCart('Frozen Hot Chocolate', 8.99,parseInt(document.getElementById('s6').value),'cs6')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Add more shake items as needed -->
+    </div>
+  </div>
+
+  <script>
+    function searchItems() {
+        var input = document.getElementById('searchInput').value.toLowerCase();
+        var items = document.querySelectorAll('.item-details h2');
+        var found = false;
+
+        items.forEach(function(item) {
+            var itemName = item.textContent.toLowerCase();
+            var parent = item.closest('.divi');
+            
+            if (itemName.includes(input)) {
+                parent.classList.remove('hidden');
+                // Scroll to the item
+                parent.scrollIntoView({ behavior: 'smooth' });
+                found = true;
+            } else {
+                parent.classList.add('hidden');
+            }
+        });
+
+        if (!found) {
+            alert("Item is not found in the store.");
+        }
+    }
+</script>
+
+<script src="cart.js"></script>
+  
+</body>
+</html>

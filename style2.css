@@ -1,0 +1,286 @@
+.navbar {
+    /* background-color: rgba(85, 44, 11, 0.289); */
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    background-color: rgba(222, 184, 135, 0.271);
+    padding-bottom: 0px;
+    text-align: center;
+    align-items: center;
+    position: sticky;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;   
+}
+
+.navbar a:hover {
+    background-color:burlywood;
+    color: black;
+}
+
+#cart{
+    padding-top: 5px;
+    
+}
+
+nav ul li{
+    padding-top: 13px;
+   display:flex;
+   column-gap: 5px;
+   padding-right: 10px;
+   padding-left:1350px;
+   /* height: auto; */
+   align-items: center;
+   text-align: center;
+   height: 38px;
+   color: black;
+   
+   
+}
+
+input::placeholder{
+    padding-top: 5px;
+    font-size: 20px;
+    
+}
+
+li button{
+    font-size: 20px;
+}
+li button:hover{
+    background-color: rgba(115, 11, 11, 0.83);
+    color:white;
+    
+    
+}
+
+
+h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    /* background-color: rgba(203, 160, 203, 0.518); */
+}
+
+h1 img{
+    width: 100vw;
+    height: 900px;
+    
+}
+
+.cartlogo{
+    height: 20px;
+    width: 20px;
+}
+
+/* Adjust brownie items layout */
+.center-container {
+    display: grid;
+    /* background-color: rgba(241, 241, 244, 0); */
+    /* justify-content: center; */
+    /* align-items: flex-start; Align items to the start */
+    padding-top: 0px; /* Adjusted to accommodate navbar */
+    /* flex-wrap: wrap; Allow items to wrap into new rows */
+    grid-template-columns: repeat(2,50%);
+}
+
+/* .divi{
+    background-color:rgba(255, 192, 203, 0.227);
+} */
+.division{
+    display: inline;
+    
+   
+}
+
+.subdiv1{
+    margin-left: 45px;
+    padding-left: 40px;
+   
+}
+
+.subdiv2{
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+.brownie-item {
+    display: flex;
+    flex-direction: row; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Adjust spacing */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(131, 119, 119);
+    
+}
+
+.brownie-item:hover{
+    transform: scale(1.2);
+}
+
+.chocolate-item {
+    display: flex;
+    flex-direction: row; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Adjust spacing */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(131, 119, 119);
+    
+}
+
+.chocolate-item:hover{
+    transform: scale(1.2);
+}
+
+.cheesecake-item {
+    display: flex;
+    flex-direction: row; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Adjust spacing */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(131, 119, 119);
+    
+}
+
+.cheesecake-item:hover{
+    transform: scale(1.2);
+}
+
+.coffee-item {
+    display: flex;
+    flex-direction: row; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Adjust spacing */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(131, 119, 119);
+    
+}
+
+.coffee-item:hover{
+    transform: scale(1.2);
+}
+
+.cookie-item {
+    display: flex;
+    flex-direction: row; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Adjust spacing */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(131, 119, 119);
+    
+}
+
+.cookie-item:hover{
+    transform: scale(1.2);
+}
+
+.cupcake-item {
+    display: flex;
+    flex-direction: row; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Adjust spacing */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(131, 119, 119);
+    
+}
+
+.cupcake-item:hover{
+    transform: scale(1.2);
+}
+
+.icecream-item {
+    display: flex;
+    flex-direction: row; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Adjust spacing */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(131, 119, 119);
+    
+}
+
+.icecream-item:hover{
+    transform: scale(1.2);
+}
+
+.pastry-item {
+    display: flex;
+    flex-direction: row; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Adjust spacing */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(131, 119, 119);
+    
+}
+
+.pastry-item:hover{
+    transform: scale(1.2);
+}
+
+.shake-item {
+    display: flex;
+    flex-direction: row; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Adjust spacing */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(131, 119, 119);
+    
+}
+
+.shake-item:hover{
+    transform: scale(1.2);
+}
+
+button{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 180px;
+}
+
+input{
+    height: 35px;
+    width: 180px;
+}
+img {
+    height: 400px;
+    width: 450px;
+    margin-bottom: 20px; /* Add space between image and details */
+}
+
+.item-details {
+    text-align: center; /* Center text */
+    font-size: x-large;
+    padding-left: 20px;
+}
+
+#cart-icon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #cart-icon {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+  }
+  
+  #cart-item-count {
+    position: absolute;
+    top: -5px; /* Adjust as needed */
+    right: -5px; /* Adjust as needed */
+    background-color: red; /* Adjust as needed */
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px; /* Adjust as needed */
+  }
+  
